@@ -1,4 +1,4 @@
-# Análise Estratégica - Lojas Zonix
+# Análise Estratégica - Alura Store
 
 ## 📖 Descrição do Projeto
 
