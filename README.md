@@ -21,8 +21,8 @@ O resultado final é uma recomendação estratégica sobre qual loja deve ser ve
 O projeto é organizado com os dados de entrada, o script de análise e os relatórios visuais gerados.
 
 /
-|-- dados/
-|   |-- loja_1.csv               # Dados brutos da Alura Store Barra da Tijuca
+*|-- dados/
+*|   |-- loja_1.csv               # Dados brutos da Alura Store Barra da Tijuca
 |   |-- loja_2.csv               # Dados brutos da Alura Store Campo Grande
 |   |-- loja_3.csv               # Dados brutos da Alura Store Recreio
 |   |-- loja_4.csv               # Dados brutos da Alura Store Jacarepaguá
