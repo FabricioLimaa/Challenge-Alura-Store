@@ -34,7 +34,7 @@ O resultado final é uma recomendação estratégica sobre qual loja deve ser ve
 | `graficos_gerados/bottom_5_produtos_alura.png` | Gráfico dos 5 produtos menos vendidos por loja.                  |
 | `graficos_gerados/frete_alura.png`       | Gráfico de custo médio de frete por loja.                           |
 | `README.md`                    | Este arquivo com a documentação do projeto.                              |
-=======
+
 O projeto é organizado com os dados de entrada, o script de análise e os relatórios visuais gerados.
 
 ## 🚀 Como Executar o Projeto
@@ -50,7 +50,7 @@ O projeto é organizado com os dados de entrada, o script de análise e os relat
     ```bash
     python analise_alura.py
     ```
-    Ao final da execução, os gráficos serão salvos no diretório [graficos_gerados](http://_vscodecontentref_/2).
+    Ao final da execução, os gráficos serão salvos no diretório /graficos_gerados/.
 
 ## 📊 Análises Realizadas
 
