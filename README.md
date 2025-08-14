@@ -22,11 +22,10 @@ O projeto é organizado com os dados de entrada, o script de análise e os relat
 
 /
 * |-- dados/
-* 
-*|   |-- loja_1.csv               # Dados brutos da Alura Store Barra da Tijuca
-|   |-- loja_2.csv               # Dados brutos da Alura Store Campo Grande
-|   |-- loja_3.csv               # Dados brutos da Alura Store Recreio
-|   |-- loja_4.csv               # Dados brutos da Alura Store Jacarepaguá
+*   |-- loja_1.csv               # Dados brutos da Alura Store Barra da Tijuca
+*   |-- loja_2.csv               # Dados brutos da Alura Store Campo Grande
+*   |-- loja_3.csv               # Dados brutos da Alura Store Recreio
+*   |-- loja_4.csv               # Dados brutos da Alura Store Jacarepaguá
 |
 |-- analise_alura.py             # Script Python contendo todo o código da análise
 |
