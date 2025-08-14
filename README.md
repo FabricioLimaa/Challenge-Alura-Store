@@ -26,8 +26,8 @@ O projeto é organizado com os dados de entrada, o script de análise e os relat
 *   |-- loja_2.csv               # Dados brutos da Alura Store Campo Grande
 *   |-- loja_3.csv               # Dados brutos da Alura Store Recreio
 *   |-- loja_4.csv               # Dados brutos da Alura Store Jacarepaguá
-|
-|-- analise_alura.py             # Script Python contendo todo o código da análise
+
+* |-- analise_alura.py             # Script Python contendo todo o código da análise
 |
 |-- graficos_gerados/            # Diretório contendo os gráficos gerados pela análise
 |   |-- faturamento_alura.png        # Gráfico de faturamento total por loja
