@@ -26,12 +26,12 @@ O projeto é organizado com os dados de entrada, o script de análise e os relat
 |-- analise_alura.py         # Script Python contendo todo o código da análise
 |
 |-- graficos_gerados/          # Diretório contendo as visualizações
-|   |-- faturamento_zonix.png
-|   |-- categorias_zonix.png
-|   |-- avaliacoes_zonix.png
-|   |-- top_5_produtos_zonix.png
-|   |-- bottom_5_produtos_zonix.png
-|   |-- frete_zonix.png
+|   |-- faturamento_alura.png
+|   |-- categorias_alura.png
+|   |-- avaliacoes_alura.png
+|   |-- top_5_produtos_alura.png
+|   |-- bottom_5_produtos_alura.png
+|   |-- frete_alura.png
 |
 |-- README.md                # Este arquivo
 
@@ -46,7 +46,7 @@ O projeto é organizado com os dados de entrada, o script de análise e os relat
 
 3.  **Execução:** Execute o script principal de análise.
     ```bash
-    python analise_zonix.py
+    python analise_alura.py
     ```
     Ao final da execução, os gráficos serão salvos no diretório [graficos_gerados](http://_vscodecontentref_/2).
 
@@ -68,5 +68,5 @@ Embora apresente o maior faturamento, esta unidade demonstrou ser a menos eficie
 
 ## ✒️ Autor
 
-* **[Seu Nome Completo]**
-* **[Link para seu LinkedIn ou GitHub]**
+* **Fabricio Lima**
+* **[\[Link para seu LinkedIn ou GitHub\]](https://github.com/FabricioLimaa)**
