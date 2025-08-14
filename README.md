@@ -2,7 +2,7 @@
 
 ## 📖 Descrição do Projeto
 
-Este projeto realiza uma análise de dados detalhada de quatro lojas da rede fictícia "Zonix", localizadas na Zona Oeste do Rio de Janeiro. O objetivo é avaliar o desempenho de cada unidade com base em métricas de faturamento, vendas, satisfação do cliente e custos operacionais (frete). A análise resulta em uma recomendação estratégica sobre qual loja deveria ser vendida para otimizar os negócios da rede.
+Este projeto realiza uma análise de dados detalhada de quatro lojas da rede fictícia "Alura Store", localizadas na Zona Oeste do Rio de Janeiro. O objetivo é avaliar o desempenho de cada unidade com base em métricas de faturamento, vendas, satisfação do cliente e custos operacionais (frete). A análise resulta em uma recomendação estratégica sobre qual loja deveria ser vendida para otimizar os negócios da rede.
 
 O projeto simula um case de Business Intelligence, onde os dados são transformados em insights acionáveis para a tomada de decisão.
 
@@ -18,12 +18,12 @@ O projeto é organizado com os dados de entrada, o script de análise e os relat
 
 /
 |-- dados/
-|   |-- loja_1.csv               # Dados brutos da Zonix Barra da Tijuca
-|   |-- loja_2.csv               # Dados brutos da Zonix Campo Grande
-|   |-- loja_3.csv               # Dados brutos da Zonix Recreio
-|   |-- loja_4.csv               # Dados brutos da Zonix Jacarepaguá
+|   |-- loja_1.csv               # Dados brutos da Alura Barra da Tijuca
+|   |-- loja_2.csv               # Dados brutos da Alura Campo Grande
+|   |-- loja_3.csv               # Dados brutos da Alura Recreio
+|   |-- loja_4.csv               # Dados brutos da Alura Jacarepaguá
 |
-|-- analise_zonix.py         # Script Python contendo todo o código da análise
+|-- analise_alura.py         # Script Python contendo todo o código da análise
 |
 |-- graficos_gerados/          # Diretório contendo as visualizações
 |   |-- faturamento_zonix.png
@@ -48,11 +48,11 @@ O projeto é organizado com os dados de entrada, o script de análise e os relat
     ```bash
     python analise_zonix.py
     ```
-    Ao final da execução, os gráficos serão salvos no diretório `graficos_gerados/`.
+    Ao final da execução, os gráficos serão salvos no diretório [graficos_gerados](http://_vscodecontentref_/2).
 
 ## 📊 Análises Realizadas
 
-Foram investigadas cinco métricas principais para cada loja da rede Zonix:
+Foram investigadas cinco métricas principais para cada loja da rede Alura Store:
 
 1.  **Faturamento Total:** Receita bruta total de cada unidade.
 2.  **Vendas por Categoria:** Volume de vendas para cada categoria de produto.
@@ -62,9 +62,9 @@ Foram investigadas cinco métricas principais para cada loja da rede Zonix:
 
 ## 🏆 Conclusão e Recomendação
 
-Com base na análise consolidada dos dados, a recomendação estratégica é a **venda da loja Zonix Barra da Tijuca**.
+Com base na análise consolidada dos dados, a recomendação estratégica é a **venda da loja Alura Store Barra da Tijuca**.
 
-Embora apresente o maior faturamento, esta unidade demonstrou ser a menos eficiente, registrando a **pior avaliação média dos clientes** e o **maior custo médio de frete**. A decisão prioriza a saúde do negócio a longo prazo, focando em eficiência operacional e satisfação do cliente, áreas em que a **Zonix Jacarepaguá**, apesar do menor faturamento, mostrou ter mais força e potencial.
+Embora apresente o maior faturamento, esta unidade demonstrou ser a menos eficiente, registrando a **pior avaliação média dos clientes** e o **maior custo médio de frete**. A decisão prioriza a saúde do negócio a longo prazo, focando em eficiência operacional e satisfação do cliente, áreas em que a **Alura Store Jacarepaguá**, apesar do menor faturamento, mostrou ter mais força e potencial.
 
 ## ✒️ Autor
 
