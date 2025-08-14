@@ -10,59 +10,30 @@ O resultado final é uma recomendação estratégica sobre qual loja deve ser ve
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Python 3.x**
-* **Pandas:** Para carregamento, manipulação e análise dos dados.
-* **Matplotlib:** Para a criação de visualizações gráficas.
+- **Python 3.x**
+- **Pandas:** Para carregamento, manipulação e análise dos dados.
+- **Matplotlib:** Para a criação de visualizações gráficas.
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-O projeto é organizado com os dados de entrada, o script de análise e os relatórios visuais gerados.
-
-/
-|-- dados/
-|   |-- loja_1.csv               # Dados brutos da Alura Store Barra da Tijuca
-|   |-- loja_2.csv               # Dados brutos da Alura Store Campo Grande
-|   |-- loja_3.csv               # Dados brutos da Alura Store Recreio
-|   |-- loja_4.csv               # Dados brutos da Alura Store Jacarepaguá
-|
-|-- analise_alura.py             # Script Python contendo todo o código da análise
-|
-|-- graficos_gerados/            # Diretório contendo os gráficos gerados pela análise
-|   |-- faturamento_alura.png        # Gráfico de faturamento total por loja
-|   |-- categorias_alura.png         # Gráfico de vendas por categoria
-|   |-- avaliacoes_alura.png         # Gráfico de média de avaliações por loja
-|   |-- top_5_produtos_alura.png     # Gráfico dos 5 produtos mais vendidos por loja
-|   |-- bottom_5_produtos_alura.png  # Gráfico dos 5 produtos menos vendidos por loja
-|   |-- frete_alura.png              # Gráfico de custo médio de frete por loja
-|
-|-- README.md                    # Este arquivo com a documentação do projeto
-
-## 🚀 Como Executar o Projeto
-
-1.  **Pré-requisitos:** Certifique-se de ter o Python 3 instalado.
-
-2.  **Instalação de Dependências:** Instale as bibliotecas necessárias.
-    ```bash
-    pip install pandas matplotlib
-    ```
-
-3.  **Execução:** Execute o script principal de análise.
-    ```bash
-    python analise_alura.py
-    ```
-    Ao final da execução, os gráficos serão salvos no diretório [graficos_gerados](http://_vscodecontentref_/2).
-
-## 📊 Análises Realizadas
-
-Foram investigadas cinco métricas principais para cada loja da rede Alura Store:
-
-1.  **Faturamento Total:** Receita bruta total de cada unidade.
-2.  **Vendas por Categoria:** Volume de vendas para cada categoria de produto.
-3.  **Média de Avaliação dos Clientes:** Nível de satisfação do cliente (escala de 1 a 5).
-4.  **Produtos Mais e Menos Vendidos:** Identificação dos produtos com maior e menor volume de vendas.
-5.  **Custo Médio de Frete:** Eficiência logística e custo operacional por venda.
+| Diretório/Arquivo              | Descrição                                                                 |
+|--------------------------------|---------------------------------------------------------------------------|
+| `dados/`                       | Contém os arquivos CSV com os dados brutos das lojas.                     |
+| `dados/loja_1.csv`             | Dados da Alura Store Barra da Tijuca.                                     |
+| `dados/loja_2.csv`             | Dados da Alura Store Campo Grande.                                        |
+| `dados/loja_3.csv`             | Dados da Alura Store Recreio.                                             |
+| `dados/loja_4.csv`             | Dados da Alura Store Jacarepaguá.                                         |
+| `analise_alura.py`             | Script Python contendo todo o código da análise.                         |
+| `graficos_gerados/`            | Diretório contendo os gráficos gerados pela análise.                     |
+| `graficos_gerados/faturamento_alura.png` | Gráfico de faturamento total por loja.                              |
+| `graficos_gerados/categorias_alura.png`  | Gráfico de vendas por categoria.                                     |
+| `graficos_gerados/avaliacoes_alura.png`  | Gráfico de média de avaliações por loja.                             |
+| `graficos_gerados/top_5_produtos_alura.png` | Gráfico dos 5 produtos mais vendidos por loja.                     |
+| `graficos_gerados/bottom_5_produtos_alura.png` | Gráfico dos 5 produtos menos vendidos por loja.                  |
+| `graficos_gerados/frete_alura.png`       | Gráfico de custo médio de frete por loja.                           |
+| `README.md`                    | Este arquivo com a documentação do projeto.                              |
 
 ---
 
@@ -109,7 +80,7 @@ Foram investigadas cinco métricas principais para cada loja da rede Alura Store
     ```bash
     python analise_alura.py
     ```
-    Após a execução, os gráficos serão salvos no diretório [graficos_gerados](http://_vscodecontentref_/3).
+    Após a execução, os gráficos serão salvos no diretório [graficos_gerados](http://_vscodecontentref_/0).
 
 4. **Execução no Notebook (Opcional):** Caso prefira uma análise interativa, utilize o notebook no Google Colab ou Jupyter Notebook.
 
@@ -125,5 +96,5 @@ Embora apresente o maior faturamento, esta unidade demonstrou ser a menos eficie
 
 ## ✒️ Autor
 
-* **Fabricio Lima**
-* **[GitHub](https://github.com/FabricioLimaa)**
+- **Fabricio Lima**
+- **[GitHub](https://github.com/FabricioLimaa)**
