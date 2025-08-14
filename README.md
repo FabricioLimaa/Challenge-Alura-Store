@@ -18,22 +18,22 @@ O projeto é organizado com os dados de entrada, o script de análise e os relat
 
 /
 |-- dados/
-|   |-- loja_1.csv               # Dados brutos da Alura Barra da Tijuca
-|   |-- loja_2.csv               # Dados brutos da Alura Campo Grande
-|   |-- loja_3.csv               # Dados brutos da Alura Recreio
-|   |-- loja_4.csv               # Dados brutos da Alura Jacarepaguá
+|   |-- loja_1.csv               # Dados brutos da Alura Store Barra da Tijuca
+|   |-- loja_2.csv               # Dados brutos da Alura Store Campo Grande
+|   |-- loja_3.csv               # Dados brutos da Alura Store Recreio
+|   |-- loja_4.csv               # Dados brutos da Alura Store Jacarepaguá
 |
-|-- analise_alura.py         # Script Python contendo todo o código da análise
+|-- analise_alura.py             # Script Python contendo todo o código da análise
 |
-|-- graficos_gerados/          # Diretório contendo as visualizações
-|   |-- faturamento_alura.png
-|   |-- categorias_alura.png
-|   |-- avaliacoes_alura.png
-|   |-- top_5_produtos_alura.png
-|   |-- bottom_5_produtos_alura.png
-|   |-- frete_alura.png
+|-- graficos_gerados/            # Diretório contendo os gráficos gerados pela análise
+|   |-- faturamento_alura.png        # Gráfico de faturamento total por loja
+|   |-- categorias_alura.png         # Gráfico de vendas por categoria
+|   |-- avaliacoes_alura.png         # Gráfico de média de avaliações por loja
+|   |-- top_5_produtos_alura.png     # Gráfico dos 5 produtos mais vendidos por loja
+|   |-- bottom_5_produtos_alura.png  # Gráfico dos 5 produtos menos vendidos por loja
+|   |-- frete_alura.png              # Gráfico de custo médio de frete por loja
 |
-|-- README.md                # Este arquivo
+|-- README.md                    # Este arquivo com a documentação do projeto
 
 ## 🚀 Como Executar o Projeto
 
