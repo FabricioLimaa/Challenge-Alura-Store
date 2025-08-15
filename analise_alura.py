@@ -10,16 +10,16 @@ from datetime import datetime  # Import necessário para data e hora
 # Centraliza todas as variáveis que podem mudar, facilitando a manutenção.
 # ==============================================================================
 CONFIG = {
-    'caminho_dados': './dados/',
-    'caminho_graficos': './graficos_gerados/',
-    'lojas': {
+    'caminho_dados': './dados/',  # Diretório onde os arquivos CSV estão localizados
+    'caminho_graficos': './graficos_gerados/',  # Diretório onde os gráficos serão salvos
+    'lojas': {  # Mapeamento dos arquivos CSV para os nomes das lojas
         'loja_1.csv': 'Alura Store Barra da Tijuca',
         'loja_2.csv': 'Alura Store Campo Grande',
         'loja_3.csv': 'Alura Store Recreio',
         'loja_4.csv': 'Alura Store Jacarepaguá'
     },
-    'paleta_cores': ['#F2E205', '#A68C0A', '#F2CB05', '#F2EBC4', '#0D0D0D'],
-    'mapa_colunas': {
+    'paleta_cores': ['#F2E205', '#A68C0A', '#F2CB05', '#F2EBC4', '#0D0D0D'],  # Paleta de cores para os gráficos
+    'mapa_colunas': {  # Mapeamento de nomes de colunas para facilitar o uso no código
         'Preço': 'preco',
         'Categoria do Produto': 'categoria_produto',
         'Avaliação da compra': 'avaliacao_compra',
@@ -39,26 +39,30 @@ def carregar_dados(config):
     Carrega os dados de múltiplos arquivos CSV, adiciona o nome da loja
     e concatena tudo em um único DataFrame.
     """
-    dfs = []
+    dfs = []  # Lista para armazenar os DataFrames de cada loja
     print("Carregando dados...")
     for arquivo, nome_loja in config['lojas'].items():
         caminho_completo = os.path.join(config['caminho_dados'], arquivo)
         try:
+            # Lê o arquivo CSV e adiciona uma coluna com o nome da loja
             df = pd.read_csv(caminho_completo)
             df['Loja'] = nome_loja
             dfs.append(df)
         except FileNotFoundError:
             print(f"AVISO: O arquivo '{caminho_completo}' não foi encontrado e será ignorado.")
     
-    if not dfs:
+    if not dfs:  # Verifica se algum dado foi carregado
         print("ERRO: Nenhum dado foi carregado. Verifique os caminhos dos arquivos.")
         return None
         
     print("Dados carregados com sucesso.")
-    return pd.concat(dfs, ignore_index=True)
+    return pd.concat(dfs, ignore_index=True)  # Concatena todos os DataFrames em um único
 
 def limpar_diretorio(caminho):
-    """Remove todos os arquivos do diretório especificado."""
+    """
+    Remove todos os arquivos do diretório especificado.
+    Se o diretório não existir, ele será criado.
+    """
     if os.path.exists(caminho):
         for arquivo in os.listdir(caminho):
             caminho_arquivo = os.path.join(caminho, arquivo)
@@ -68,14 +72,19 @@ def limpar_diretorio(caminho):
         os.makedirs(caminho)
 
 def gerar_nome_arquivo(base_nome):
-    """Gera um nome de arquivo com data e hora."""
+    """
+    Gera um nome de arquivo com data e hora para evitar sobrescrições.
+    """
     data_hora = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     return f"{base_nome}_{data_hora}.png"
 
 def plotar_faturamento(df, config):
-    """Analisa e plota o faturamento total por loja."""
+    """
+    Analisa e plota o faturamento total por loja.
+    Gera um gráfico de pizza com a porcentagem de faturamento de cada loja.
+    """
     print("Analisando faturamento...")
-    faturamento = df.groupby('Loja')['Preço'].sum()
+    faturamento = df.groupby('Loja')['Preço'].sum()  # Soma o faturamento por loja
 
     plt.figure(figsize=(10, 8))
     faturamento.plot(kind='pie', autopct=lambda p: f'{p:.1f}%', startangle=90, colors=config['paleta_cores'])
@@ -87,7 +96,10 @@ def plotar_faturamento(df, config):
     plt.close()
 
 def plotar_categorias(df, config):
-    """Analisa e plota as vendas por categoria."""
+    """
+    Analisa e plota as vendas por categoria.
+    Gera um gráfico de barras empilhadas para cada loja.
+    """
     print("Analisando vendas por categoria...")
     vendas_categoria = df.groupby(['Categoria do Produto', 'Loja']).size().unstack(fill_value=0)
 
@@ -218,12 +230,18 @@ def analisar_e_plotar_produtos(df, config):
 # ==============================================================================
 
 def main():
-    """Função principal que executa o fluxo completo da análise."""
+    """
+    Função principal que executa o fluxo completo da análise:
+    - Limpa o diretório de gráficos.
+    - Carrega os dados.
+    - Executa as análises e gera os gráficos.
+    """
     limpar_diretorio(CONFIG['caminho_graficos'])  # Limpa o diretório antes de gerar novos gráficos
     
-    df_completo = carregar_dados(CONFIG)
+    df_completo = carregar_dados(CONFIG)  # Carrega os dados de todas as lojas
     
     if df_completo is not None:
+        # Executa as análises e gera os gráficos
         plotar_faturamento(df_completo, CONFIG)
         plotar_categorias(df_completo, CONFIG)
         plotar_avaliacoes(df_completo, CONFIG)
