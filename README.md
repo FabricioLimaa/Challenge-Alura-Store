@@ -65,28 +65,28 @@ Foram investigadas cinco métricas principais para cada loja da rede Alura Store
 ## 📊 Exemplos de Gráficos e Insights Obtidos
 
 ### 1. **Faturamento Total por Loja**
-![Faturamento Total](graficos_gerados/faturamento_alura_store_2025-08-14_00-45-10.png)
+![Faturamento Total](graficos_gerados/faturamento_alura_store_2025-08-14_22-50-29.png)
 
 - A **Alura Store Barra da Tijuca** apresentou o maior faturamento, mas também os maiores custos operacionais.
 
 ### 2. **Vendas por Categoria**
-![Vendas por Categoria](graficos_gerados/categorias_alura_store_2025-08-14_00-45-10.png)
+![Vendas por Categoria](graficos_gerados/categorias_alura_store_2025-08-14_22-50-30.png)
 
 - As categorias mais vendidas variam entre as lojas, destacando a importância de estratégias locais.
 
 ### 3. **Média de Avaliação dos Clientes**
-![Média de Avaliação](graficos_gerados/avaliacoes_alura_store_2025-08-14_00-45-11.png)
+![Média de Avaliação](graficos_gerados/avaliacoes_alura_store_2025-08-14_22-50-30.png)
 
 - A **Alura Store Jacarepaguá** obteve a melhor avaliação média dos clientes, indicando maior satisfação.
 
 ### 4. **Produtos Mais e Menos Vendidos**
-![Top 5 Produtos](graficos_gerados/top_5_produtos_alura_store_2025-08-14_00-45-11.png)
-![Bottom 5 Produtos](graficos_gerados/bottom_5_produtos_alura_store_2025-08-14_00-45-11.png)
+![Top 5 Produtos](graficos_gerados/top_5_produtos_alura_store_2025-08-14_22-50-30.png)
+![Bottom 5 Produtos](graficos_gerados/bottom_5_produtos_alura_store_2025-08-14_22-50-31.png)
 
 - Produtos mais vendidos são consistentes entre as lojas, mas os menos vendidos variam significativamente.
 
 ### 5. **Custo Médio de Frete**
-![Custo Médio de Frete](graficos_gerados/frete_alura_store_2025-08-14_00-45-11.png)
+![Custo Médio de Frete](graficos_gerados/frete_alura_store_2025-08-14_22-50-30.png)
 
 - A **Alura Store Barra da Tijuca** apresentou o maior custo médio de frete, impactando sua eficiência operacional.
 
